@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth; /* smooth scrolling for section links */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf9f3;
+}
+
+/* Navigation */
+nav {
+    background-color: #6b4e37;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+nav ul li a {
+    
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #d3bfa7;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+    padding: 40px;
+}
+
+/* Home section */
+.home-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.intro-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #6b4e37;
+    margin: 0;
+}
+.intro-text p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0px;
+}
+.intro-text {
+    margin-top: -200px;
+    margin-left: -100px;
+}
+
+.profile-pic img {
+    width: 800px; /* Bigger profile pic */
+    height: auto;
+    display: block;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+/* Projects */
+.projects-section .project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    transition: transform 0.2s;
+}
+.projects-section .project-card:hover {
+    transform: scale(1.02);
+}
+.projects-section a {
+    color: #6b4e37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact-icons a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #6b4e37;
+    font-weight: bold;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fdf9f3; /* matches body background */
+    color: #6b4e37; /* same brown as navbar text */
+    font-weight: bold;
+    border-top: 1px solid #d3bfa7; /* optional: thin line for separation */
+}
